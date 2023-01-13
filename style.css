@@ -1,0 +1,161 @@
+.grid-container{
+            grid-template-areas;
+           'header header header header header header'
+		   
+            }
+         .head{
+            font-family: maiandra GD;
+			background-color: yellow;
+			position:fixed;
+			margin-left: 63%;
+			margin-top:;
+			z-index:2; 
+			font-size: 2vw;
+            }
+			a{
+				text-decoration: none;
+			}
+			.img{
+				height: auto;
+				width:20%;
+				max-width: 100%;
+				float:left;
+			}
+			ul {
+				list-style: none;
+				text-align: center;
+			}
+			li {
+				display: inline;
+				font-size: 1.5 vw;
+					
+				}
+			.item{
+				position:fixed;
+			}
+			.rect{
+				width: 100%;
+				background-color: yellow;
+				position:fixed;
+				position:relative;
+				z-index:1;
+				overflow:hidden;
+				padding-bottom:6%;
+				position:fixed;
+			}
+			.sq{
+				position:relative;
+				width: 25%;
+				padding-bottom:25%;
+				overflow:hidden;
+				background:blue;
+			}
+			.logo{
+				height:auto;
+				width:13%;
+				max-width:200px;
+				margin-left: 85%;
+				z-index:3;
+				position:fixed;
+				margin-top:-3%;
+			}
+			.buy1{
+			background-color:black;
+			width:100px;
+			border-radius:10px;
+			color:white;	
+			}
+			.cho{
+				margin-top:%;
+				z-index:2;
+				font-family: maiandra GD;
+				font-size:1.2vw;
+				margin-left:50%;
+				position:fixed;
+			}
+			.ins{
+				font-family: maiandra GD;
+				list-style: inline;
+			}
+			.feat{
+				font-size:1.2vw;
+			}
+			.sell{
+				height:auto;
+				width:5%;
+				margin-left:17%;
+				max-width:5%;
+				margin-top:1%;
+				z-index:3;
+				position:fixed;
+			}
+			.buy{
+				height:auto;
+				width:6%;
+				position:fixed;
+				margin-left:65%;
+				max-width:5%;
+				margin-top:7%;
+				z-index:3;
+			}
+			
+			.ico{
+				display:inline;
+			}
+			.back{
+				font-family: maiandra GD;
+				font-size:1.65vw;
+				margin-top:-4.2%;
+				z-index:2;
+			}
+			.head2{
+            font-family: maiandra GD;
+			position:fixed;
+			margin-left:10%;
+			margin-top:%;
+			z-index:2; 
+			font-size: 2vw;
+            }
+			.head3{
+            font-family: maiandra GD;
+			position:fixed;
+			margin-left:23%;
+			margin-top:%;
+			z-index:2; 
+			font-size: 2vw;
+            }
+			.buy1{
+			background-color:black;
+			width:100px;
+			border-radius:10px;
+			color:white;	
+			}
+			.dropbtn{
+				position:relative;
+				display:inline-block;
+				margin-top:5%;
+				margin-left:10%;
+			}
+			.dropdown-content{
+				display:none;
+				position:fixed;
+				background-color:#f1f1f1;
+				overflow:auto;
+				box-shadow:0px 8px 16px 0px rgba(0,0,0,2);
+				width:15%;
+				height:auto;
+			}
+			.dropdown-content a{
+				color:black;
+				padding:15% 40%;
+				text-decoration:none;
+				display:block;
+				font-size:1vw;
+				font-family:maiandra GD;
+			}
+			.dropdown a:hover{
+				background-color:#ddd;
+			}
+			.show{
+				display:block;
+			}

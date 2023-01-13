@@ -1,0 +1,189 @@
+			.cho{
+				margin-top:%;
+				z-index:2;
+				font-family: maiandra GD;
+				font-size:1.2vw;
+				margin-left:50%;
+				position:fixed;
+			}
+			.ins{
+				font-family: maiandra GD;
+				list-style: inline;
+			}
+			a{
+				text-decoration: none;
+				paddding: 20px 10px;
+			}
+			.feat{
+				font-size:1.2vw;
+			}
+			.sell{
+				height:auto;
+				width:5%;
+				margin-left:17%;
+				max-width:5%;
+				margin-top:1%;
+				z-index:3;
+				position:fixed;
+			}
+			.buy{
+				height:auto;
+				width:6%;
+				position:fixed;
+				margin-left:65%;
+				max-width:5%;
+				margin-top:7%;
+				z-index:3;
+			}
+			
+			.ico{
+				display:inline;
+			}
+			.back{
+				font-family: maiandra GD;
+				font-size:1.65vw;
+				margin-top:-4.2%;
+				z-index:2;
+			}
+			.head2{
+            font-family: maiandra GD;
+			position:fixed;
+			margin-left: 10%;
+			margin-top:%;
+			z-index:2; 
+			font-size: 2vw;
+            }
+.dropbtn1{
+	height:auto;
+	width:5%;
+	position:fixed;
+	margin-left:17%;
+	max-width:5%;
+	margin-top:1%;
+	z-index:3;
+	cursor:pointer;
+	}
+.dropdown {
+	position: relative;
+	margin-left:25%;
+	margin-top:-1%;
+	z-index:2;
+}
+.dropdown-content {
+	display: none;
+	position: fixed;
+	overflow: auto;
+	width:13%;
+	height: auto;
+	padding-left:;
+	padding-right:;
+	font-family:maiandra GD;
+}
+
+.dropdown-content a {
+  padding: 5% 5% 6% 30%;
+  text-decoration: none;
+  font-size:1.2vw;
+  font-family:maiandra GD;
+  
+}
+.dropdown a:hover {
+background-color: #ddd;
+}
+
+.show {display: block;}
+	.test{
+			display:inline-block;
+			padding-right:1%;
+			padding-top:1%;
+			font-size:1vw;
+			font-family:Berlin Sans FB;
+			background-color:#ffffe6;
+			transition: 0.4s;
+			height:auto;
+			width:20%;
+			margin-top:1%;
+			margin-right:1%;
+		}
+		.test:hover{
+			background-color:#ffff80;
+			
+		}
+		.tex{
+			text-align:center;
+			font-size:1vw;
+		}
+		
+		td{
+			text-align:center;
+			font-size:1vw;
+		}
+		.mov{	
+			font-family: Berlin Sans FB;
+			background-color: #ddd;
+			border: none;
+			color: black;
+			padding-left:2%;
+			padding-right:2%;
+			padding-bottom:2%;
+			padding-top:1%;
+			font-size: 1.2vw;
+			transition: 0.3s;
+			border-radius:10%;
+		}
+		.mov:hover{
+		  background-color: #3e8e41;
+		  color: white;
+		  font-size: 1.2vw;
+		}
+		img{
+			width:100%;
+			height:auto;
+			margin-left:2.5%;
+		}
+		.prod{
+			margin-top:1%;
+		}
+		 body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  padding: 1%;
+  border: 1px solid #888;
+  width: 20%;
+  z-index:3;
+  margin-left:40%;
+  margin-top:10%;
+  position:fixed;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}       

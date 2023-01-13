@@ -1,0 +1,99 @@
+	
+<!doctype html>																																																												
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>select_images</title>
+	<style>
+		.test{
+			display:inline-block;
+			font-size:1.2vw;
+			font-family:Berlin Sans FB;
+			background-color:#ffffe6;
+			transition: 0.4s;
+			height:auto;
+			width:20%;
+			margin-left:1%;
+		}
+		.test:hover{
+			background-color:#ffff80;
+		}
+		td,.tex{
+			text-align:center;
+		}
+		.mov{	
+			font-family: Berlin Sans FB;
+			background-color: #ddd;
+			border: none;
+			color: black;
+			padding-left:2%;
+			padding-right:2%;
+			padding-bottom:2%;
+			padding-top:2%;
+			font-size: 1.2vw;
+			transition: 0.3s;
+			border-radius:10%;
+		}
+		.mov:hover{
+		  background-color: #3e8e41;
+		  color: white;
+		  font-size: 1.2vw;
+		}
+		img{
+			width:100%;
+			height:auto;
+		}
+		.my{
+			padding-top:3%;
+			padding-bottom:2%;
+			text-transform:uppercase;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<?php	if(!isset($_SESSION['username'])){  
+			header("location:index.php");  
+			} 
+			$db = mysqli_connect("localhost","user","1234","modern_eniac");
+			
+			$username=$_SESSION['username'];
+			$sql="SELECT * FROM product where username = '".$_SESSION['username']."'";
+			
+			$result = mysqli_query($db,$sql);
+			while($row=mysqli_fetch_assoc($result)){
+	?>			
+				<a href="product_specs.php?id=<?php echo $row['item_no'];?>"><table class="test">
+					<tr><td colspan="2" class="pics"><img src="images/<?php echo $row['image'];?>" width="300px" height="200"></td></tr>
+					<tr><td>Brand: <?php echo $row['brand'];?> <?php echo $row['processor'];?></td></tr>
+					<tr><td>HDD: <?php echo $row['HDD'];?></td></tr>
+					<tr><td>Price: Php <?php echo $row['price'];?></td></tr>
+					<tr><td colspan="2" class="my">my product</td></tr>
+				</table></a>
+	<?php	
+		}
+	?>
+	<?php	
+			$db = mysqli_connect("localhost","user","1234","modern_eniac");
+			$sql="SELECT * FROM product where username != '".$_SESSION['username']."'";
+			
+			$result = mysqli_query($db,$sql);
+			while($row=mysqli_fetch_assoc($result)){
+	?>			
+				
+				<a href="product_specs.php?id=<?php echo $row['item_no'];?>"><table class="test">
+					<tr><td colspan="2" class="pics"><img src="images/<?php echo $row['image'];?>" width="300px" height="200"></td></tr>
+					<tr><td>Brand: <?php echo $row['brand'];?> <?php echo $row['processor'];?></td></tr>
+					<tr><td>graphics: <?php echo $row['graphics'];?></td></tr>
+					<tr><td>Price:Php <?php echo $row['price'];?></td></tr>
+					<tr><td colspan="2">
+					<form action="insert_cart.php" method="POST">
+					<input type="hidden" name="item_no" value="<?php echo $row['item_no'];?>">
+					<input type="submit" value="move to cart" class="mov">
+					</form></td></tr>	
+				</table></a>
+	<?php	
+		}
+	?>	
+</div>
+</body>
+</html>
